@@ -1,0 +1,37 @@
+/*variables*/
+/*reset*/
+* { margin: 0; padding: 0; }
+
+body { font-size: 62.5%; font-family: 'ff-enzo-web',sans-serif; font-weight: 600; font-style: normal; background-color: #2D2D2D; }
+
+/*reset*/
+/*main-content*/
+.content-holder { width: 100%; height: 381px; margin: 100px 0; padding: 20px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background: url(front-background.jpg); background-size: cover; background-position: center bottom !important; }
+
+.action { text-align: center; }
+.action .link { position: relative; width: 100%; max-width: 220px; height: 220px; margin: 0 60px; display: inline-block; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.link .icon { width: 100%; height: 170px; display: block; transition: 0.2s ease-in; -webkit-transition: 0.2s ease-in; }
+.link .icon:hover { transform: rotate(360deg) scale(1.2); -webkit-transform: rotate(360deg) scale(1.2); }
+.mission-link .icon { background: url("icon-console.svg"); background-repeat: no-repeat; background-size: contain; background-size: 178px 109px; background-position: center 31px; }
+.play-link .icon { background: url("icon-rocket.svg"); background-repeat: no-repeat; background-size: 126px 126px; background-position: center 14px; }
+.touch-link .icon { background: url("icon-location.svg"); background-repeat: no-repeat; background-size: 132px 138px; background-position: center 2px; }
+
+.link .button { position: relative; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; width: 180px; height: 50px; display: block; border: 2px solid rgba(255, 255, 255, 0.8); font-size: 1.8em; color: #2ecc71; font-weight: 700; padding: 0 0 0 20px; line-height: 46px; background-image: url("icon-button-arrow.svg"); background-size: 26px 20px; background-position: 130px center; background-repeat: no-repeat; text-transform: uppercase; text-decoration: none; text-align: left; margin: auto; transition: 0.2s ease-out; -webkit-transition: 0.2s ease-out; }
+.link .button:hover { border: 2px solid white; background-position: 140px center; }
+.link .button:hover .line-top { width: 100%; left: -2px; }
+.link .button:hover .line-right { height: 100%; top: -2px; }
+.link .button:hover .line-bottom { width: 100%; right: -2px; }
+.link .button:hover .line-left { height: 100%; bottom: -2px; }
+
+.line { position: absolute; background: #fff; transition: 0.4s ease; }
+.line-top { width: 0px; height: 2px; top: -2px; left: -110%; }
+.line-right { width: 2px; height: 0px; right: -2px; top: -110%; }
+.line-bottom { width: 0; height: 2px; bottom: -2px; right: -110%; }
+.line-left { width: 2px; height: 0px; bottom: -110%; left: -2px; }
+
+.tip { position: absolute; padding: 0px 14px; height: 35px; line-height: 35px; background: #2dcb70; color: #fff; top: 160px; font-size: 1.5em; font-weight: normal; margin: 0 auto; border-radius: 3px; display: block; opacity: 0; }
+.tip em { font-style: normal; }
+.tip span { position: absolute; width: 0; height: 0; border: 7px solid transparent; border-top-color: #2dcb70; overflow: hidden; left: 50%; margin-left: -3px; bottom: -14px; }
+
+/*# sourceMappingURL=style.css.map */

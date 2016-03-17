@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iuvo|UX,UI,Drupal</title>
+	<meta charset="UTF-8">
+	<meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body >
+<div class="content-holder">
+	<article class="action animated">
+		<div class="link mission-link">
+			<span class="icon animated"></span>
+			<a href="/mission" title="My mission is clear" class="button" data-title="My mission is clear">
+				<span class="line line-top"></span>
+				<span class="line line-right"></span>
+				<span class="line line-bottom"></span>
+				<span class="line line-left"></span>
+				MISSION
+			</a>
+		</div>
+		<div class="link play-link">
+			<span class="icon animated"></span>
+			<a href="/mission" title="My mission is clear" class="button" data-title="My mission is clear">
+				<span class="line line-top"></span>
+				<span class="line line-right"></span>
+				<span class="line line-bottom"></span>
+				<span class="line line-left"></span>
+				PLAY
+			</a>
+		</div>
+		<div class="link touch-link">
+			<span class="icon animated"></span>
+			<a href="/mission" title="My mission is clear" class="button" data-title="Let do something together">
+				<span class="line line-top"></span>
+				<span class="line line-right"></span>
+				<span class="line line-bottom"></span>
+				<span class="line line-left"></span>
+				TOUCH
+			</a>
+		</div>
+		<div class="clear"></div>
+	</article>
+	<div class="tip" >
+		<em></em>
+		<span></span>
+	</div>
+	
+</div>
+</body>
+<script type="text/javascript">
+	$(function(){
+		$(".link .button").hover(function(){
+			var title=$(this).attr("data-title");
+			$(".tip em").text(title);
+			var pos=$(this).offset().left;
+			var dis=($(".tip").outerWidth()-$(this).outerWidth())/2;
+			$(".tip").css({"left":(pos-dis)+"px","opacity":1}).animate({"top":250},300);
+		},function(){
+			$(".tip").animate({"top":230,"opacity":0},300)
+		})
+		// var json1=["1"];
+		
+		// 	json1.unshift("2");
+		// 	alert(json1); 
+		
+		
+	
+	})
+	
+</script>
+</html>
